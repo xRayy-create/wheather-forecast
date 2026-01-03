@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wheather Forecast</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/current.css">
-    <link rel="stylesheet" href="css/future.css">
 </head>
 <body>
-    
+  <div class="header">
+  <h2 class="header__greeting">Good Morning</h2>
+  <div class="header__controls">
+    <div class="header__search">
+    <img src="./icons/search.svg" alt="" class="header__search-icon">
+    <input type="search" placeholder="Search your location" class="header__search-input">
+  </div>
+  <label class="header__toggle">
+    <input type="checkbox" class="header__toggle-input">
+    <span class="header__toggle-slider">
+      <img src="./icons/sun.svg" class="header__toggle-icon header__toggle-icon-sun">
+      <img src="./icons/moon.svg" class="header__toggle-icon header__toggle-icon-moon" >
+    </span>
+  </label>
+</div>
+</div>
 </body>
 </html>

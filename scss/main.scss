@@ -1,0 +1,45 @@
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+@import
+  'base/reset';
+
+@import
+  'components/countries',
+  'components/current-wheather',
+  'components/forecast',
+  'components/greeting',
+  'components/highlights',
+  'components/search-field',
+  'components/theme-toggle';
+
+  @font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-VariableFont_opsz_wght.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+html, body {
+  font-family: "Inter";
+  background-color: #080808;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 50px;
+  margin-top: 30px;
+}
+.header__controls {
+  display: flex;
+  gap: 320px;
+}

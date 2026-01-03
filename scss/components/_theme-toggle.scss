@@ -1,0 +1,49 @@
+.header__toggle input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.header__toggle {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 56px;
+}
+.header__toggle-slider {
+    position: absolute;
+    inset: 0;
+    border-radius: 34px;
+    background: #1e1e1e;
+
+    &::before {
+    position: absolute;
+    content: "";
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    fill: #262626;
+    box-shadow: inset 4px -3px 8px 0 rgba(129, 129, 129, 0.25), 
+    inset -4px 0 4px 0 rgba(0, 0, 0, 0.25), 
+    inset 1px 4px 4px 0 rgba(0, 0, 0, 0.25), 
+    -4px 0 4px 0 rgba(0, 0, 0, 0.25);
+    transition: 0.4s;
+    }
+    .header__toggle-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 24px;   
+    height: 24px;
+    z-index: 1;    
+    
+    &-sun {
+      left: 16px;  
+    }
+    &-moon {
+      right: 16px;  
+    }
+  }
+}
+input:checked + .header__toggle-slider::before {
+    transform: translateX(44px);
+}
