@@ -47,41 +47,24 @@ html, body {
   display: flex;
   gap: 320px;
 }
-
-// .wheather {
-//   width: 1000px;
-//   height: 700px;
-//   display: grid;
-//   justify-items: end;
-//   align-items: center;
-//   grid-template-columns: 350px 350px;
-// }
-
 .dashboard {
   display: grid;
+  grid-template-columns: 556px 664px;
   gap: 24px;
-}
-@media screen and (min-width: 720px) {
-  .dashboard {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 24px;
-    place-content: center;
-    
-  }
+  place-content: center;
 
+  &__current, 
+  &__countries, 
+  &__highlights, 
+  &__forecast {
+    padding: 20px;         
+    border-radius: 20px;    
+    background-color: #1b1b1b;
+  }
+}
   .left-column,
   .right-column {
     display: flex;
-    flex-direction: column;
     gap: 24px;
-  }
-.dashboard__current, 
-.dashboard__countries, 
-.dashboard__highlights, 
-.dashboard__forecast {
-  padding: 20px;         
-  border-radius: 20px;    
-  background-color: #1b1b1b; 
-}
+    flex-direction: column;
 }
