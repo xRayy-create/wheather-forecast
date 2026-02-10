@@ -1,6 +1,5 @@
 @import
   'abstracts/variables',
-  'abstracts/functions',
   'abstracts/mixins';
 @import
   'base/reset';
@@ -25,21 +24,64 @@
 html, body {
   font-family: "Inter";
   background-color: #080808;
+  display: grid;
+  grid-template-rows: auto 1fr; 
+  height: 100vh;
+  overflow: hidden; 
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-inline: 50px;
+  margin-inline: 100px;
   margin-top: 30px;
 }
 .header__controls {
   display: flex;
   gap: 320px;
+}
+
+// .wheather {
+//   width: 1000px;
+//   height: 700px;
+//   display: grid;
+//   justify-items: end;
+//   align-items: center;
+//   grid-template-columns: 350px 350px;
+// }
+
+.dashboard {
+  display: grid;
+  gap: 24px;
+}
+@media screen and (min-width: 720px) {
+  .dashboard {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 24px;
+    place-content: center;
+    
+  }
+
+  .left-column,
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+.dashboard__current, 
+.dashboard__countries, 
+.dashboard__highlights, 
+.dashboard__forecast {
+  padding: 20px;         
+  border-radius: 20px;    
+  background-color: #1b1b1b; 
+}
 }

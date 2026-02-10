@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wheather Forecast</title>
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wheather Forecast</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
   <div class="header">
-  <h2 class="header__greeting">Good Morning</h2>
-  <div class="header__controls">
-    <div class="header__search">
-    <img src="./icons/search.svg" alt="" class="header__search-icon">
-    <input type="search" placeholder="Search your location" class="header__search-input">
+    <h2 class="header__greeting">Good Morning</h2>
+    <div class="header__controls">
+      <div class="header__search">
+        <img src="./icons/search.svg" alt="" class="header__search-icon">
+        <input type="search" placeholder="Search your location" class="header__search-input">
+      </div>
+      <label class="header__toggle">
+        <input type="checkbox" class="header__toggle-input">
+        <span class="header__toggle-slider">
+          <img src="./icons/sun.svg" class="header__toggle-icon header__toggle-icon-sun">
+          <img src="./icons/moon.svg" class="header__toggle-icon header__toggle-icon-moon">
+        </span>
+      </label>
+    </div>
   </div>
-  <label class="header__toggle">
-    <input type="checkbox" class="header__toggle-input">
-    <span class="header__toggle-slider">
-      <img src="./icons/sun.svg" class="header__toggle-icon header__toggle-icon-sun">
-      <img src="./icons/moon.svg" class="header__toggle-icon header__toggle-icon-moon" >
-    </span>
-  </label>
-</div>
-</div>
+  <main class="dashboard">
+    <div class="left-column">
+      <section class="dashboard__current">
+        current
+      </section>
+      <section class="dashboard__countries">
+        <h2>Others Countries</h2>
+      </section>
+    </div>
+    <div class="right-column">
+      <section class="dashboard__highlights">
+        <h2>Today's Highlight</h2>
+      </section>
+      <section class="dashboard__forecast">
+        <h2>10 Day Forecast</h2>
+      </section>
+    </div>
+  </main>
 </body>
-</html>
+</html> 
