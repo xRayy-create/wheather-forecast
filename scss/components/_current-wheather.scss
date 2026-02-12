@@ -1,3 +1,21 @@
-.dashboard__current {
+.current_wheather {
     height: 314px;
+}
+.location-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    height: 40px;
+    border-radius: 16px;
+    padding: 8px 16px;
+    background: #363636;
+    
+    &__icon {
+       padding-right: 8px;
+    }
+    &__text {
+        font-size: $font-size-middle;
+        color: #fff;
+    }
 }

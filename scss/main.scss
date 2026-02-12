@@ -59,12 +59,13 @@ html, body {
   &__forecast {
     padding: 20px;         
     border-radius: 20px;    
-    background-color: #1b1b1b;
+    background-color: #1e1e1e;;
   }
-}
-  .left-column,
-  .right-column {
+
+  &__left-column,
+  &__right-column {
     display: flex;
     gap: 24px;
     flex-direction: column;
+ }
 }
