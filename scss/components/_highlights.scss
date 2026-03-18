@@ -86,3 +86,26 @@
 .card-humidity__result {
     font-size: $font-size-small-subtitle;
 }
+
+.card-visibility {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 16px;
+    margin-inline: 30px;
+    margin-block: 16px;
+}
+.card-visibility__general {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    font-size: $font-size-subtitle;
+}
+.card-visibility__number {
+    font-size: $font-size-title;
+}
+.card-visibility__value,
+.card-visibility__time {
+    font-size: $font-size-small-subtitle;
+}
