@@ -109,3 +109,18 @@
 .card-visibility__time {
     font-size: $font-size-small-subtitle;
 }
+
+.sunrise_info {
+    width: 100%;
+    height: 134px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 71px;
+    padding-inline: 16px;
+    padding-block: 35px;
+}
+.sunrise_general {
+    display: flex;
+    flex-direction: column;
+}
