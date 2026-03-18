@@ -2,21 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wheather Forecast</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.css">
   </head>
-
   <body>
     <div class="header">
       <h2>Good Morning</h2>
       <div class="header__controls">
         <div class="header__search">
-          <img src="./icons/search.svg" alt="" class="header__search-icon" />
+          <img src="./icons/search.svg" alt="" class="header__search-icon">
           <input type="search" placeholder="Search your location" class="header__search-input">
         </div>
         <label class="header__toggle">
-          <input type="checkbox" class="header__toggle-input"/>
+          <input type="checkbox" class="header__toggle-input">
           <span class="header__toggle-slider">
             <img src="./icons/sun.svg" class="header__toggle-icon header__toggle-icon-sun">
             <img src="./icons/moon.svg" class="header__toggle-icon header__toggle-icon-moon">
@@ -28,7 +27,7 @@
       <div class="dashboard__left-column">
         <section class="current_wheather dashboard__current">
           <div class="location-field current_wheather__first-info">
-            <img src="./icons/location.svg" class="location-field__icon"/>
+            <img src="./icons/location.svg" class="location-field__icon">
             <span class="location-field__text">Dhaka, Banglandesh</span>
           </div>
         </section>
@@ -54,19 +53,31 @@
               </div>
             </div>
             <div class="wheather-info__uv-index">
-             <div class="card_uv-index wheather-info__uv-index">
-              <div class="card_uv-index__general ">
-                <img src="icons/uv-index.svg">
-                UV Index
-              </div>
-              <div class="card_uv-index__number">
+              <div class="card_uv-index wheather-info__uv-index">
+                <div class="card_uv-index__general">
+                  <img src="icons/uv-index.svg">
+                  UV Index
+                </div>
+                <div class="card_uv-index__number">
                   4
                   <span class="card_uv-index__value">UV</span>
+                </div>
+                <div class="card_uv-index__moderate">Moderate UV</div>
               </div>
-              <div class="card_uv-index__moderate">Moderate UV</div>
-             </div>
             </div>
-            <div class="wheather-info__humidity">sdgsdg</div>
+            <div class="wheather-info__humidity">
+              <div class="card-humidity wheather-info__humidity">
+                <div class="card-humidity__general">
+                  <img src="icons/humidity.svg">
+                  Humidity
+                </div>
+                <div class="card-humidity__number">
+                  85
+                  <span class="card-humidity__value">%</span>
+                </div>
+                <div class="card-humidity__result">Moderate UV</div>
+              </div>
+            </div>
             <div class="wheather-info__visibility">sgdsg</div>
             <div class="wheather-info__sunrise card-sunrise_big">dgsfg</div>
             <div class="wheather-info__sunset card-sunset_big">dgsgdsf</div>

@@ -63,3 +63,26 @@
 .card_uv-index__moderate {
     font-size: $font-size-small-subtitle;
 }
+
+.card-humidity {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 16px;
+    margin-inline: 22px;
+    margin-block: 16px;
+}
+.card-humidity__general {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    font-size: $font-size-subtitle;
+}
+.card-humidity__number {
+    font-size: $font-size-title;
+}
+.card-humidity__value,
+.card-humidity__result {
+    font-size: $font-size-small-subtitle;
+}
