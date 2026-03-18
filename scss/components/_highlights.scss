@@ -18,10 +18,6 @@
     .card-sunset_big {
         border-radius: 24px;
     }
-    }
-
-.wheather-info__wind {
-    color: #FFF;
 }
 .card-wind {
     display: flex;
@@ -30,7 +26,7 @@
     row-gap: 16px;
     margin: 16px;
 }
-.card-wind__header {
+.card-wind__general {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,9 +36,30 @@
 .card-wind__speed-value {
     font-size: $font-size-title;
 }
-.card-wind__speed {
+.card-wind__speed,
+.card-wind__time {
     font-size: $font-size-small-subtitle;
 }
-.card-wind__time {
+
+.card_uv-index {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 16px;
+    margin-inline: 27px;
+    margin-block: 16px;
+}
+.card_uv-index__general {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    font-size: $font-size-subtitle;
+}
+.card_uv-index__number {
+    font-size: $font-size-title;
+}
+.card_uv-index__value,
+.card_uv-index__moderate {
     font-size: $font-size-small-subtitle;
 }

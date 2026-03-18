@@ -1,74 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheather Forecast</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wheather Forecast</title>
-  <link rel="stylesheet" href="css/main.css">
-</head>
-
-<body>
-  <div class="header">
-    <h2 style="color: #fff;">Good Morning</h2>
-    <div class="header__controls">
-      <div class="header__search">
-        <img src="./icons/search.svg" alt="" class="header__search-icon">
-        <input type="search" placeholder="Search your location" class="header__search-input">
+  <body>
+    <div class="header">
+      <h2>Good Morning</h2>
+      <div class="header__controls">
+        <div class="header__search">
+          <img src="./icons/search.svg" alt="" class="header__search-icon" />
+          <input type="search" placeholder="Search your location" class="header__search-input">
+        </div>
+        <label class="header__toggle">
+          <input type="checkbox" class="header__toggle-input"/>
+          <span class="header__toggle-slider">
+            <img src="./icons/sun.svg" class="header__toggle-icon header__toggle-icon-sun">
+            <img src="./icons/moon.svg" class="header__toggle-icon header__toggle-icon-moon">
+          </span>
+        </label>
       </div>
-      <label class="header__toggle">
-        <input type="checkbox" class="header__toggle-input">
-        <span class="header__toggle-slider">
-          <img src="./icons/sun.svg" class="header__toggle-icon header__toggle-icon-sun">
-          <img src="./icons/moon.svg" class="header__toggle-icon header__toggle-icon-moon">
-        </span>
-      </label>
     </div>
-  </div>
-  <main class="dashboard">
-    <div class="dashboard__left-column">
-      <section class="current_wheather dashboard__current">
-        <div class="location-field current_wheather__first-info">
-        <img src="./icons/location.svg" class="location-field__icon">
-        <span class="location-field__text">Dhaka, Banglandesh</span>
-        </div>
-      </section>
-      <section class="other_countries-wheather dashboard__countries">
-        <h2>Others Countries</h2>
-      </section>
-    </div>
-    <div class="dashboard__right-column">
-      <section class="wheather-highlights dashboard__highlights">
-        <h2>Today's Highlight</h2>
-        <div class="wheather-info wheather-highlights">
-          <div class="wheather-info__wind">
-            <div class="card-wind wheather-info__wind">
-              <div class="card-wind__header ">
-              <img src="icons/wind.svg">
-              Wind Status
+    <main class="dashboard">
+      <div class="dashboard__left-column">
+        <section class="current_wheather dashboard__current">
+          <div class="location-field current_wheather__first-info">
+            <img src="./icons/location.svg" class="location-field__icon"/>
+            <span class="location-field__text">Dhaka, Banglandesh</span>
+          </div>
+        </section>
+        <section class="other_countries-wheather dashboard__countries">
+          <h2>Others Countries</h2>
+        </section>
+      </div>
+      <div class="dashboard__right-column">
+        <section class="wheather-highlights dashboard__highlights">
+          <h2>Today's Highlight</h2>
+          <div class="wheather-info wheather-highlights">
+            <div class="wheather-info__wind">
+              <div class="card-wind wheather-info__wind">
+                <div class="card-wind__general">
+                  <img src="icons/wind.svg">
+                  Wind Status
+                </div>
+                <div class="card-wind__speed-value">
+                  7.90
+                  <span class="card-wind__speed">km/h</span>
+                </div>
+                <div class="card-wind__time">9:00 AM</div>
+              </div>
             </div>
-            <!-- <div class="card-wind__accurate_dates">
-
-            </div> -->
-            <div class="card-wind__speed-value">
-            7.90
-            <span class="card-wind__speed">km/h</span>
+            <div class="wheather-info__uv-index">
+             <div class="card_uv-index wheather-info__uv-index">
+              <div class="card_uv-index__general ">
+                <img src="icons/uv-index.svg">
+                UV Index
+              </div>
+              <div class="card_uv-index__number">
+                  4
+                  <span class="card_uv-index__value">UV</span>
+              </div>
+              <div class="card_uv-index__moderate">Moderate UV</div>
+             </div>
+            </div>
+            <div class="wheather-info__humidity">sdgsdg</div>
+            <div class="wheather-info__visibility">sgdsg</div>
+            <div class="wheather-info__sunrise card-sunrise_big">dgsfg</div>
+            <div class="wheather-info__sunset card-sunset_big">dgsgdsf</div>
           </div>
-          
-          <div class="card-wind__time">9:00 AM</div>
-          </div>
-          </div>
-          <div class="wheather-info__uv-index">sdgdsgsfsfsfs</div>
-          <div class="wheather-info__humidity">sdgsdg</div>
-          <div class="wheather-info__visibility">sgdsg</div>
-          <div class="wheather-info__sunrise card-sunrise_big">dgsfg</div>
-          <div class="wheather-info__sunset card-sunset_big">dgsgdsf</div>
-        </div>
-      </section>
-      <section class="wheather-forecast dashboard__forecast">
-        <h2>10 Day Forecast</h2>
-      </section>
-    </div>
-  </main>
-</body>
-</html> 
+        </section>
+        <section class="wheather-forecast dashboard__forecast">
+          <h2>10 Day Forecast</h2>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
