@@ -1,3 +1,30 @@
 .wheather-forecast {
     height: 321px;
 }
+
+.wheather-forecast__wrapper {
+    margin-top: 20px;
+}
+.forecast-column {
+    width: auto;
+    height: 219px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 18px;
+    
+}
+.forecast-column::-webkit-scrollbar {
+    display: none;
+}
+.columns {
+    width: 104px;
+    height: 219px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 24px;
+    background-color: #272727;
+}
