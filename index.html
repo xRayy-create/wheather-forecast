@@ -26,10 +26,34 @@
     <main class="dashboard">
       <div class="dashboard__left-column">
         <section class="current_wheather dashboard__current">
-          <div class="location-field current_wheather__first-info">
-            <img src="./icons/location.svg" class="location-field__icon">
-            <span class="location-field__text">Dhaka, Banglandesh</span>
+        <div class="current_wrapper current_wheather">
+          <div class="current_wrapper__general-info">
+            <div class="location-field current_wheather__first-info">
+              <img src="./icons/location.svg" class="location-field__icon">
+              <span class="location-field__text">Dhaka, Banglandesh</span>
+            </div>
+            <div class="temperature_toggle">
+              <img src="icons/celsius.svg" class="temperature_toggle__celsius">
+              <img src="icons/arrow.svg" class="temperature_toggle__arrow">
+              <select class="temperature_toggle__select">
+                <option value="celsius">°C</option>
+                <option value="fahrenheit">°F</option>
+              </select>
+            </div>
           </div>
+          <div class="current_wrapper__day-info">
+            <p class="day" style="font-weight: 500; font-size: 36px;">Sunday</p>
+            <p class="date" style="font-weight: 400; font-size: 16px;" >04 Aug, 2024</p>
+          </div>
+          <div class="current_wrapper__temp-info">
+            <img src="icons/rain.svg" class="current_weather__icon" style="width: 150px; height: 150px;">
+            <div class="current_wrapper__second-info">
+              <p class="temp-main" style="font-size: 40px; font-weight: 500;">28°C</p>
+              <p class="temp-desc" style="font-size: 20px; font-weight: 500; margin-top: 45px;">Heavy Rain</p>
+              <p class="temp-feels" style="font-size: 16px; font-weight: 400; margin-top: 5px;">Feels like 31°</p>
+            </div>
+          </div>
+        </div>
         </section>
         <section class="other_countries-wheather dashboard__countries">
           <h2>Others Countries</h2>
