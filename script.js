@@ -31,11 +31,19 @@ cityInput.addEventListener('keydown', async (event) => {
         cityInput.value.trim() != ""
         
     ) {
-    const data = await getWeatherData(cityInput.value)
-    getCurrentWeatherDate(data)
-    cityLocation.textContent = formatCity(cityInput.value);
+    try {
+            const data = await getWeatherData(cityInput.value);
+            getCurrentWeatherDate(data);
+            cityLocation.textContent = formatCity(cityInput.value);
+            cityInput.placeholder = "Search your location";
+
+    } catch (error) {
+            cityInput.value = "";
+            cityInput.placeholder = "City not found";
+        }
     }
 })
+
 
 function formatCity(city) {
     return city
