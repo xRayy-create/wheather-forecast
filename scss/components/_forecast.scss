@@ -10,9 +10,7 @@
     height: 219px;
     display: flex;
     align-items: center;
-    flex-shrink: 0;
-    overflow-x: auto;
-    overflow-y: hidden;
+    justify-content: center;
     gap: 18px;
     
 }
